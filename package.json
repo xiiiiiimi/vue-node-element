@@ -1,7 +1,7 @@
 {
   "name": "vue-node-element",
   "description": "A Vue.js project",
-  "author": "yi.shyang@ele.me",
+  "author": "xiiiiiimi",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --env.dev",
