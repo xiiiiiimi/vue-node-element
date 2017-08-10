@@ -1,33 +1,25 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
+    <Header></Header>
+    <img src="./assets/logo.png">
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {
-    name: 'App',
-  data () {
-    return {
-      msg: 'Use Vue 2.0 Today!'
-    }
-  },
-  methods: {
-    startHacking () {
-      this.$notify({
-        title: 'It Works',
-        message: 'We have laid the groundwork for you. Now it\'s your time to build something epic!',
-        duration: 6000
-      })
-    }
+  import Header from './view/layout/header.vue'
+  export default {
+    name: 'app',
+    components:{Header},
   }
-}
 </script>
 
 <style>
-body {
-  font-family: Helvetica, sans-serif;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
-  #app{text-align: center;}
 </style>
